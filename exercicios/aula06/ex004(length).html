@@ -15,9 +15,12 @@
 <body>
     <script>
         var nome = window.prompt('Qual é seu nome?')
-        document.write(`Olá, ${nome}. Seu nome tem ${nome.length} letras.`)
-        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}`)
-        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}`)
+
+        document.write(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras.         <br>`) //nome.length diz quantos caracteres a string tem
+
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}. <br>`) //tudo para 'MAIÚSCULAS'
+
+        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}.`) //tudo para 'minúsculas'
     </script>
 </body>
 </html>
