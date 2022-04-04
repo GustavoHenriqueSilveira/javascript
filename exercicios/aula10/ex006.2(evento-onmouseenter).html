@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../icones/favicon.ico" type="image/x-icon">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            font: normal 20pt arial;
+            background: #008000;
+            color: #ffffff;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onmouseenter="entrar()">
+        Interaja.
+
+        <!--onmouseenter vai chamar a função 'entrar' quando <div> for acessada com o mouse.-->
+
+    </div>
+    <script>
+        function entrar() {
+            var a = window.document.getElementById('area')
+
+            a.innerText = 'Entrou!'
+        }
+
+        //quando 'entrar' for chamado por entrar com o mouse, a função será utilizada. No caso o conteúdo de 'area' foi alterado. Em resumo, quando passar o mouse dentro da <div> o objeto a será criado e ligado ao elemento 'area' dentro do HTML, esse objeto vai alterar o conteúdo para 'entrou!'.
+    </script>
+</body>
+</html>
